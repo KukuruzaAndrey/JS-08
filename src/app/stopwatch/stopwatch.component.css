@@ -1,0 +1,29 @@
+.main {
+	display: flex;
+}
+button {
+	font-size: 2rem;
+}
+.controls {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-size: 1.5rem;
+	width: 25%;
+	right: 0;
+}
+.input-holder {
+	display: flex;
+	justify-content: space-between;
+}
+.buttons {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+}
+.laps {
+	height: 70vh;
+	overflow: auto;
+}
+

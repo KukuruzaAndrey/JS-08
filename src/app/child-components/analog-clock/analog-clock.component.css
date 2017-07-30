@@ -1,0 +1,48 @@
+/*noinspection ALL*/
+.analog-clock {
+	width: 27rem;
+	height: 27rem;
+	border: 20px solid white;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 2rem;
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+	inset 0 0 0 3px #EFEFEF,
+	inset 0 0 10px black,
+	0 0 10px rgba(0, 0, 0, 0.2);
+}
+.clock-face {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.hand {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	height: 50%;
+	transition: transform .05s cubic-bezier(0, 2, .5, 1);
+	transform-origin: 50% 100%;
+}
+/*noinspection ALL*/
+.hand::before {
+	content: '';
+	display: block;
+	position: relative;
+	bottom: 0;
+	border-radius: 42.5%;
+	border: 3px solid black;
+	height: 100%;
+}
+.hour-hand {
+	height: 37.5%;
+}
+/*noinspection ALL*/
+.second-hand::before {
+	border: 2px solid red;
+}
+/*noinspection ALL*/
+.hour-hand::before {
+	border: 4px solid black;
+}

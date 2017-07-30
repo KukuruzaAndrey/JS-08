@@ -1,0 +1,7 @@
+<div class="analog-clock">
+	<div class="clock-face">
+		<div [ngStyle]="{'transform': 'rotate('+analogClock.hourDegrees+'deg)'}" class="hand hour-hand"></div>
+		<div [ngStyle]="{'transform': 'rotate('+analogClock.minsDegrees+'deg)'}" class="hand min-hand"></div>
+		<div [ngStyle]="{'transform': 'rotate('+analogClock.secondsDegrees+'deg)'}" class="hand second-hand"></div>
+	</div>
+</div>

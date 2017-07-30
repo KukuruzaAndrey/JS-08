@@ -1,0 +1,23 @@
+
+p, h1 {
+	margin: 0;
+}
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+.lap {
+	margin-bottom: 10px;
+}
+.lap-time-holder {
+	display: flex;
+	justify-content: space-between;
+}
+/*noinspection ALL*/
+.better {
+	color: green;
+}
+/*noinspection ALL*/
+.worse {
+	color: red;
+}

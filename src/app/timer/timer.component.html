@@ -1,0 +1,24 @@
+<div class="controls">
+	<div class="timings">
+		<div class="input-holder">
+			<label for="hours">Hours</label>
+			<input [(ngModel)]="inputTime.hours" [disabled]="isStarted" (input)="onUserInput()" type="number" min="0"
+				   id="hours">
+		</div>
+		<div class="input-holder">
+			<label for="minutes">Minutes</label>
+			<input [(ngModel)]="inputTime.mins" [disabled]="isStarted" (input)="onUserInput()" type="number" min="0"
+				   id="minutes"></div>
+		<div class="input-holder">
+			<label for="seconds">Seconds</label>
+			<input [(ngModel)]="inputTime.seconds" [disabled]="isStarted" (input)="onUserInput()" type="number" min="0"
+				   id="seconds"></div>
+	</div>
+	<div class="buttons">
+		<button (click)="!isStarted?start():pause()">{{!isStarted?'Start':'Pause'}}</button>
+		<button (click)="stop()">Stop</button>
+	</div>
+</div>
+<app-analog-clock></app-analog-clock>
+<app-digital-display></app-digital-display>
+

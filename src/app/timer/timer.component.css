@@ -1,0 +1,29 @@
+input {
+	font-size: 3rem;
+	width: 30%;
+}
+button {
+	font-size: 2rem;
+}
+.controls {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	font-size: 3rem;
+	width: 25%;
+	right: 0;
+}
+.timings {
+	display: flex;
+	flex-direction: column;
+}
+.input-holder {
+	display: flex;
+	justify-content: space-between;
+}
+.buttons {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+}

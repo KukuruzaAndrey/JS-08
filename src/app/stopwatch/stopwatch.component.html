@@ -1,0 +1,21 @@
+<div class='main'>
+	<div class='clock'>
+		<app-analog-clock></app-analog-clock>
+		<app-digital-display></app-digital-display>
+	</div>
+	<div class='clock'>
+		<app-analog-clock></app-analog-clock>
+		<app-digital-display></app-digital-display>
+	</div>
+	<div class="controls">
+		<div class="buttons">
+			<button (click)="mainStopwatch.isStarted?pause():start()">{{mainStopwatch.isStarted?'Pause':'Start'}}
+			</button>
+			<button (click)="lap()">Lap</button>
+			<button (click)="stop()">Stop</button>
+		</div>
+		<div class="laps">
+			<app-lap *ngFor="let lap of laps;let ind = index" [ind]="laps.length-ind" [lap]="lap"></app-lap>
+		</div>
+	</div>
+</div>

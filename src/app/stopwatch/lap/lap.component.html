@@ -1,0 +1,15 @@
+<div class="lap">
+	<h1>lap {{ind}}</h1>
+	<div class="lap-time-holder">
+		<p class=lap-time>{{lapTime}}</p>
+		<p>lap time</p>
+	</div>
+	<div class="lap-time-holder">
+		<p class='lap-time-relative-prev' [className]="classForPrev">{{lapTimeRelativePrev}}</p>
+		<p>lap-time-relative-prev</p>
+	</div>
+	<div class="lap-time-holder">
+		<p class=lap-time-relative-avg [className]="classForAvg">{{lapTimeRelativeAvg}}</p>
+		<p>lap-time-relative-avg</p>
+	</div>
+</div>
